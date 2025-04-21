@@ -19,13 +19,13 @@ double Cylinder :: Volume(){
 
 double Cylinder :: Circumference(){
 
-    return M_PI*radius;
+    return 4*M_PI*radius;
 }
 
 istream & operator>>(istream & in, Cylinder & cldr)
 {
     in>>cldr.radius>>cldr.height;
-    return ;
+    return in;
 }
 
 ostream & operator<<(ostream & out, Cylinder & cldr)
